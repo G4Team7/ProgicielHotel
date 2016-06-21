@@ -10,18 +10,18 @@ package Chambre;
  * @author Yaniv
  */
 public class Chambre {
-    private int id;
     private int numero;
     private String type;
     private int tarif;
     private String categorie;
+    private boolean statut;
     
-    public Chambre(int numId, int num, String typeChambre, int tarifChambre, String categ){
-        this.id = numId;
+    public Chambre(int num, String typeChambre, int tarifChambre, String categ, boolean statutChambre){
         this.numero = num;
         this.type = typeChambre;
         this.tarif = tarifChambre;
         this.categorie = categ;
+        this.statut = statutChambre;
     }
     
     
