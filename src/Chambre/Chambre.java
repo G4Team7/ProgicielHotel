@@ -22,6 +22,7 @@ public class Chambre {
         this.tarif = tarifChambre;
         this.categorie = categ;
         this.statut = statutChambre;
+        
     }
     
     
