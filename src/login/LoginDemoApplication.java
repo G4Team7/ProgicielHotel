@@ -1,11 +1,11 @@
-package progicielhotel;
+package login;
 
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
-import progicielhotel.LoginManager;
+import login.LoginManager;
 
 /** Main application class for the login demo application */
 public class LoginDemoApplication extends Application {
