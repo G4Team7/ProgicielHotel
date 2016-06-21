@@ -3,15 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Rechad/Documents/NetBeansProjects/ProgicielHotel/src/progicielhotel/FXMLDocumentController.java</file>
-            <file>file:/C:/Users/Rechad/Documents/NetBeansProjects/ProgicielHotel/src/Service/Service.java</file>
+            <file>file:/C:/Users/Rechad/Documents/NetBeansProjects/ProgicielHotel/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/Rechad/Documents/NetBeansProjects/ProgicielHotel/src/progicielhotel/MainViewController.java</file>
             <file>file:/C:/Users/Rechad/Documents/NetBeansProjects/ProgicielHotel/src/progicielhotel/ProgicielHotel.java</file>
-            <file>file:/C:/Users/Rechad/Documents/NetBeansProjects/ProgicielHotel/src/Reservation/ReservationService.java</file>
-            <file>file:/C:/Users/Rechad/Documents/NetBeansProjects/ProgicielHotel/src/progicielhotel/fxmldocument.css</file>
-            <file>file:/C:/Users/Rechad/Documents/NetBeansProjects/ProgicielHotel/src/Chambre/Chambre.java</file>
-            <file>file:/C:/Users/Rechad/Documents/NetBeansProjects/ProgicielHotel/src/database/DBConnection.java</file>
-            <file>file:/C:/Users/Rechad/Documents/NetBeansProjects/ProgicielHotel/src/progicielhotel/FXMLDocument.fxml</file>
-            <file>file:/C:/Users/Rechad/Documents/NetBeansProjects/ProgicielHotel/src/User/User.java</file>
+            <file>file:/C:/Users/Rechad/Documents/NetBeansProjects/ProgicielHotel/src/progicielhotel/LoginController.java</file>
+            <file>file:/C:/Users/Rechad/Documents/NetBeansProjects/ProgicielHotel/src/progicielhotel/login.fxml</file>
+            <file>file:/C:/Users/Rechad/Documents/NetBeansProjects/ProgicielHotel/src/progicielhotel/mainview.fxml</file>
+            <file>file:/C:/Users/Rechad/Documents/NetBeansProjects/ProgicielHotel/src/progicielhotel/LoginManager.java</file>
         </group>
     </open-files>
 </project-private>

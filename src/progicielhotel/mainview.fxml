@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<StackPane prefWidth="231.0" xmlns:fx="http://javafx.com/fxml" fx:controller="login.LoginController">
+<StackPane prefWidth="231.0" xmlns:fx="http://javafx.com/fxml" fx:controller="progicielhotel.MainViewController">
   <children>
     <StackPane>
       <children>
@@ -15,10 +15,8 @@
           <children>
             <GridPane>
               <children>
-                <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-                <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-                <TextField fx:id="user" promptText="Use &quot;open&quot; to login" text="open" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-                <TextField fx:id="password" promptText="Use &quot;sesame&quot; to login" text="sesame" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label text="Session ID:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <Label fx:id="sessionLabel" text="Undefined" GridPane.columnIndex="1" GridPane.rowIndex="0" />
               </children>
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="109.0" />
@@ -31,7 +29,7 @@
             </GridPane>
             <StackPane prefHeight="-1.0" prefWidth="-1.0">
               <children>
-                <Button fx:id="loginButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false" text="Login" StackPane.alignment="CENTER_RIGHT" />
+                <Button id="loginButton" fx:id="logoutButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false" text="Logout" StackPane.alignment="CENTER_RIGHT" />
               </children>
             </StackPane>
           </children>

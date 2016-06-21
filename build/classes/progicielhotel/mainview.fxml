@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<StackPane prefWidth="231.0" xmlns:fx="http://javafx.com/fxml" fx:controller="login.MainViewController">
+<StackPane prefWidth="231.0" xmlns:fx="http://javafx.com/fxml" fx:controller="progicielhotel.MainViewController">
   <children>
     <StackPane>
       <children>
