@@ -36,15 +36,15 @@ public class Client {
     }
     
     
-    public StringProperty adresse = new SimpleStringProperty(this, "addresse");
+    public StringProperty adresse = new SimpleStringProperty(this, "adresse");
     public StringProperty adresseProperty() {
         return adresse ;
     }
     public final String getAdresse() {
         return adresseProperty().get();
     }
-    public final void setAdresse(String addresse) {
-        adresseProperty().set(addresse);
+    public final void setAdresse(String adresse) {
+        adresseProperty().set(adresse);
     }
     
     
