@@ -36,7 +36,7 @@ public class Client {
     }
     
     
-    public StringProperty adresse = new SimpleStringProperty(this, "addresse");
+    public StringProperty adresse = new SimpleStringProperty(this, "adresse");
     public StringProperty adresseProperty() {
         return adresse ;
     }
