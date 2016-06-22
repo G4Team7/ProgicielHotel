@@ -31,7 +31,7 @@ public class LoginController {
    */   
   private String authorize() {
     return 
-      "open".equals(user.getText()) && "sesame".equals(password.getText()) 
+      "admin".equals(user.getText()) && "admin".equals(password.getText()) 
             ? generateSessionID() 
             : null;
   }

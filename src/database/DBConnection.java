@@ -15,22 +15,30 @@ import java.sql.SQLException;
  */
 public class DBConnection {  
    private static Connection conn;  
-   private static String url = "jdbc:mysql://149.202.48.248/phpmyadmin/";  
+   private static String url = "jdbc:mysql://localhost/gondor";  
    private static String user = "root";//Username of database  
-   private static String pass = "team7@!";//Password of database  
+   private static String pass = "";//Password of database 
+   
    public static Connection connect() throws SQLException{  
      try{  
        Class.forName("com.mysql.jdbc.Driver").newInstance();  
      }catch(ClassNotFoundException cnfe){  
-       System.err.println("Error: "+cnfe.getMessage());  
+       System.err.println("Error: Classe pas trouvée :"+cnfe.getMessage());  
      }catch(InstantiationException ie){  
-       System.err.println("Error: "+ie.getMessage());  
+       System.err.println("Error: Pas instanciée : "+ie.getMessage());  
      }catch(IllegalAccessException iae){  
-       System.err.println("Error: "+iae.getMessage());  
+       System.err.println("Error: Accès refusé : "+iae.getMessage());  
      }  
-     conn = DriverManager.getConnection(url,user,pass);  
-     return conn;  
-   }  
+     try {
+        conn = DriverManager.getConnection(url,user,pass);  
+        return conn; 
+     } catch (SQLException e) {
+        System.out.println("Connection Failed! Check output console");
+        e.printStackTrace();
+    }
+       return null;
+   }
+   
    public static Connection getConnection() throws SQLException, ClassNotFoundException{  
      if(conn !=null && !conn.isClosed())  
        return conn;  

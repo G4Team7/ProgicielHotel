@@ -12,22 +12,37 @@ import javafx.beans.property.SimpleStringProperty ;
  * @author Rechad
  */
 public class User {
-    public String nom;
-    public String prenom;
     
-    public void addUser(String nom, String prenom, Integer profil, Integer secteur){
-          
+    public StringProperty nom = new SimpleStringProperty(this, "nom");
+    public StringProperty nomProperty() {
+        return nom ;
+    }
+    public final String getNom() {
+        return nomProperty().get();
+    }
+    public final void setNom(String nom) {
+        nomProperty().set(nom);
     }
     
-    public User getUser(Integer id){
-        User user = new User();
-          // Réccupérer utilisateur dans BDD et assigner ses attributs à user
-        return user;
+
+    public StringProperty prenom = new SimpleStringProperty(this, "prenom");
+    public StringProperty prenomProperty() {
+        return prenom ;
     }
-    
-    public void setUser(){
-          
+    public final String getPrenom() {
+        return prenomProperty().get();
     }
+    public final void setPrenom(String prenom) {
+        prenomProperty().set(prenom);
+    }
+
+    public User() {}
+
+    public User(String nom, String prenom) {
+        setNom(nom);
+        setPrenom(prenom);
+    }
+
     
     public void deleteUser(){
           
