@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="502.0" minWidth="10.0" prefWidth="202.6666717529297" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="829.3333282470703" minWidth="10.0" prefWidth="821.3333282470703" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane prefHeight="768.0" prefWidth="161.0" style="-fx-background-color: #091d4a;">
+         <children>
+            <ImageView fitHeight="49.0" fitWidth="204.0" layoutX="1.0" layoutY="1.0">
+               <image>
+                  <Image url="@Projet%20Hotel/decoupe/decoupe%201.png" />
+               </image>
+            </ImageView>
+            <ChoiceBox layoutY="100.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="202.0" style="-fx-background-color: #06225b;">
+               <opaqueInsets>
+                  <Insets left="1.0" />
+               </opaqueInsets>
+            </ChoiceBox>
+            <ChoiceBox layoutY="145.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="202.0" style="-fx-background-color: #06225b;">
+               <opaqueInsets>
+                  <Insets left="1.0" />
+               </opaqueInsets>
+            </ChoiceBox>
+            <Text fill="WHITE" layoutX="31.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gérer les réservations">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="31.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gérer la tarification">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Rectangle fill="#06225b" height="46.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="202.0" />
+            <Text fill="WHITE" layoutX="30.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="27.0" fitWidth="18.0" layoutX="9.0" layoutY="55.0">
+               <image>
+                  <Image url="@Projet%20Hotel/decoupe/dashboard_generale_03.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="18.0" layoutX="9.0" layoutY="102.0">
+               <image>
+                  <Image url="@Projet%20Hotel/decoupe/dashboard_generale_06.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="18.0" layoutX="9.0" layoutY="149.0">
+               <image>
+                  <Image url="@Projet%20Hotel/decoupe/dashboard_generale_10.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="31.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="des tables">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="31.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de la carte">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: cccccc;" GridPane.columnIndex="1">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="244.0" layoutX="22.0" layoutY="68.0" stroke="WHITE" strokeType="INSIDE" width="780.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="22.0" layoutY="330.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="219.0" layoutY="331.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="419.0" layoutY="331.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
+            <Button layoutX="621.0" layoutY="330.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="180.0" style="-fx-background-color: white;" textOverrun="CLIP" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="22.0" layoutY="521.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="219.0" layoutY="522.0" stroke="WHITE" strokeType="INSIDE" width="383.0" />
+            <Button layoutX="621.0" layoutY="521.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="180.0" style="-fx-background-color: white;" textOverrun="CLIP" />
+            <ImageView fitHeight="49.0" fitWidth="822.0" layoutY="1.0">
+               <image>
+                  <Image url="@Projet%20Hotel/decoupe/restaurant_02.png" />
+               </image>
+            </ImageView>
+            <Text fill="#bda740" layoutX="419.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="57" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="621.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durée moyenne" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="621.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de séjour" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bda740" layoutX="219.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="37" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="419.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durée moyenne" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="419.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de séjour" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="219.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durée moyenne" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="219.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de séjour" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bda740" layoutX="620.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="77" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="124.0" fitWidth="124.0" layoutX="652.0" layoutY="534.0">
+               <image>
+                  <Image url="@Projet%20Hotel/decoupe/restaurant_09.png" />
+               </image>
+            </ImageView>
+            <Text fill="#0c193a" layoutX="621.0" layoutY="674.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carte du jour" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="421.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tables  / soir" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="221.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tables / midi" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bda740" layoutX="22.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="395€" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="22.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durée moyenne" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="22.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de séjour" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bda740" layoutX="22.0" layoutY="648.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3495€" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="22.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chiffre d'affaires" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="22.0" layoutY="563.0" strokeType="OUTSIDE" strokeWidth="0.0" text="du mois" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
