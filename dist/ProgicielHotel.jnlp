@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="ProgicielHotel.jar" size="133079" download="eager" />
+    <jar href="ProgicielHotel.jar" size="294865" download="eager" />
     <jar href="lib\com.mysql.jdbc_5.1.5.jar" size="676712" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ProgicielHotel" >

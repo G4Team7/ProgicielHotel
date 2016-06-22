@@ -58,7 +58,7 @@ public class Client {
     }
 
     
-    public void deleteUser(){
+    public void deleteClient(){
           
     }
 }

@@ -27,7 +27,7 @@ public class ExampleDBTable extends Application{
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        dataAccessor = new ClientDataAccessor("com.mysql.jdbc.Driver", "jdbc:mysql://149.202.48.248/gondor", "Webmaster", "lerechad"); // provide driverName, dbURL, user, password...
+        dataAccessor = new ClientDataAccessor("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/gondor", "root", ""); // provide driverName, dbURL, user, password...
 
         TableView<Client> clientTable = new TableView<>();
         TableColumn<Client, String> nom = new TableColumn<>("Nom");
