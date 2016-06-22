@@ -5,10 +5,18 @@
  */
 package Reservation;
 
+import java.util.Date;
+
 /**
  *
  * @author Rechad
  */
 public class ReservationService {
+    private Date dateReservation;
+    private int nbHeure;
     
+    public ReservationService(Date dateReservationService, int nbHeureService){
+        this.dateReservation = dateReservationService;
+        this.nbHeure = nbHeureService;
+    }
 }

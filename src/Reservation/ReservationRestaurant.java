@@ -5,10 +5,16 @@
  */
 package Reservation;
 
+import java.util.Date;
+
 /**
  *
  * @author Rechad
  */
 public class ReservationRestaurant {
+    private Date dateReservation;
     
+    public ReservationRestaurant(Date dateReservationRestaurant){
+        this.dateReservation = dateReservationRestaurant;
+    }
 }

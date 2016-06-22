@@ -10,5 +10,13 @@ package Client;
  * @author Rechad
  */
 public class Client {
+    private String nom;
+    private String prenom;
+    private String adresse;
     
+    public Client(String nomClient, String prenomClient, String adresseClient){
+        this.nom = nomClient;
+        this.prenom = prenomClient;
+        this.adresse = adresseClient;  
+    }
 }

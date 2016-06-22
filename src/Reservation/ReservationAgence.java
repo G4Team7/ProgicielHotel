@@ -5,10 +5,25 @@
  */
 package Reservation;
 
+import java.util.Date;
+
 /**
  *
  * @author Rechad
  */
 public class ReservationAgence {
+    private String nom;
+    private String prenom;
+    private int nbPersonnes;
+    private Date dateDebut;
+    private Date dateFin;
     
+    public ReservationAgence(String nomResAgence, String prenomResAgence, int nbPersonnesResAgence, Date dateDebutResAgence, Date dateFinResAgence){
+        this.nom = nomResAgence;
+        this.prenom = prenomResAgence;
+        this.nbPersonnes = nbPersonnesResAgence;
+        this.dateDebut = dateDebutResAgence;
+        this.dateFin = dateFinResAgence;
+        
+    }
 }
