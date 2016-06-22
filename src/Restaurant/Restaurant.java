@@ -10,5 +10,9 @@ package Restaurant;
  * @author Rechad
  */
 public class Restaurant {
+    private int capacite;
     
+    public Restaurant(int capaciteRestaurant){
+        this.capacite=capaciteRestaurant;
+    }
 }
