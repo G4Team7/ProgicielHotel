@@ -11,11 +11,5 @@ package Service;
  * @author Rechad
  */
 public class Service {
-    private String libelle;
-    private int tarif;
     
-    public Service(String libelleService, int tarifService){
-        this.libelle=libelleService;
-        this.tarif=tarifService;
-    }
 }
