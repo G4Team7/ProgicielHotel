@@ -8,12 +8,15 @@ package progicielhotel;
 import Client.Client;
 import Client.ClientDataAccessor;
 import javafx.application.Application ;
+import javafx.beans.value.ObservableValue;
 import javafx.scene.control.TableView ;
 import javafx.scene.control.TableColumn ;
 import javafx.scene.control.cell.PropertyValueFactory ;
 import javafx.scene.layout.BorderPane ;
 import javafx.scene.Scene ;
+import javafx.scene.control.TableColumn.CellDataFeatures;
 import javafx.stage.Stage ;
+import javafx.util.Callback;
 
 /**
  *
@@ -27,14 +30,30 @@ public class ExampleDBTable extends Application{
         dataAccessor = new ClientDataAccessor("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/gondor", "root", ""); // provide driverName, dbURL, user, password...
 
         TableView<Client> clientTable = new TableView<>();
-        TableColumn<Client, String> firstNameCol = new TableColumn<>("Nom");
-        firstNameCol.setCellValueFactory(new PropertyValueFactory<>("nom"));
-        TableColumn<Client, String> lastNameCol = new TableColumn<>("Prenom");
-        lastNameCol.setCellValueFactory(new PropertyValueFactory<>("prenom"));
-        TableColumn<Client, String> adresseCol = new TableColumn<>("Adresse");
-        adresseCol.setCellValueFactory(new PropertyValueFactory<>("adresse"));
+        TableColumn<Client, String> nom = new TableColumn<>("Nom");
+        nom.setCellValueFactory(new Callback<CellDataFeatures<Client, String>, ObservableValue<String>>() {
+        public ObservableValue<String> call(CellDataFeatures<Client, String> p) {
+                // p.getValue() returns the Person instance for a particular TableView row
+                return p.getValue().nomProperty();
+            }
+         });
 
-        clientTable.getColumns().addAll(firstNameCol, lastNameCol, adresseCol);
+        TableColumn<Client, String> lastNameCol = new TableColumn<>("Prenom");
+        lastNameCol.setCellValueFactory(new Callback<CellDataFeatures<Client, String>, ObservableValue<String>>() {
+        public ObservableValue<String> call(CellDataFeatures<Client, String> p) {
+                // p.getValue() returns the Person instance for a particular TableView row
+                return p.getValue().prenomProperty();
+            }
+         });
+        TableColumn<Client, String> adresseCol = new TableColumn<>("Adresse");
+        adresseCol.setCellValueFactory(new Callback<CellDataFeatures<Client, String>, ObservableValue<String>>() {
+        public ObservableValue<String> call(CellDataFeatures<Client, String> p) {
+                // p.getValue() returns the Person instance for a particular TableView row
+                return p.getValue().adresseProperty();
+            }
+         });
+
+        clientTable.getColumns().addAll(nom, lastNameCol, adresseCol);
 
         clientTable.getItems().addAll(dataAccessor.getPersonList());
 
