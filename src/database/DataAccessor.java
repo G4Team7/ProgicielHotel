@@ -13,9 +13,14 @@ import java.sql.DriverManager ;
 import java.sql.SQLException ;
 import java.sql.Statement ;
 import java.sql.ResultSet ;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
+import java.time.YearMonth;
 
 import java.util.List ;
 import java.util.ArrayList ;
+import java.util.Calendar;
 
 /**
  *
@@ -54,6 +59,80 @@ public class DataAccessor {
             return exist ;
         } 
     }
+    
+    public Integer getDailyRecetteReservations(String date) throws SQLException {
+        Integer recette = 0;
+        try (
+            Statement stmnt = connection.createStatement();
+            ResultSet rs = stmnt.executeQuery("SELECT SUM(c.tarif) AS recette FROM chambre c INNER JOIN (SELECT id_chambre FROM reservation WHERE '"+ date +"' BETWEEN dateDebut and dateFin GROUP BY id_chambre) AS rs ON c.numeros = rs.id_chambre");
+                
+        ){
+            
+            while (rs.next()) {
+                recette +=  rs.getInt("recette");;
+            }
+            return recette ;
+        } 
+    }
+    
+    public int getMonthlyRecetteReservations(String month, String year, String date) throws SQLException {
+        int recette = 0;
+        int yearnb = Integer.parseInt(year);
+        int monthnb = Integer.parseInt(month);
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.YEAR, yearnb);
+        calendar.set(Calendar.MONTH, monthnb);
+        int numDays = calendar.getActualMaximum(Calendar.DATE);
+        String day;
+        
+        for (int i = 1; i<=numDays; i++){
+            day = String.format("%02d", i);
+            
+            date = year+"-"+month+"-"+day;
+            System.out.println("La date : " +date);
+            try (
+            Statement stmnt = connection.createStatement();
+            ResultSet rs = stmnt.executeQuery("SELECT SUM(c.tarif) AS recette FROM chambre c INNER JOIN (SELECT id_chambre FROM reservation WHERE '"+ date +"' BETWEEN dateDebut and dateFin GROUP BY id_chambre) AS rs ON c.numeros = rs.id_chambre");
+                
+            ){
+
+                while (rs.next()) {
+                    recette +=  rs.getInt("recette");;
+                }
+
+            } 
+        }
+        return recette ;
+    }
+    /*
+    public int getDureeMoyenneSejour(String year, String month) throws SQLException {
+        int recette = 0;
+        int yearnb = Integer.parseInt(year);
+        int monthnb = Integer.parseInt(month);
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.YEAR, yearnb);
+        calendar.set(Calendar.MONTH, monthnb);
+        int numDays = calendar.getActualMaximum(Calendar.DATE);
+        String day;
+        String dateDebut = year+"-"+month+"-01";
+        String dateFin = year+"-"+month+"-"+numDays;
+        List<int, String, String> ListReservation;
+        ListReservation = new ArrayList<>();
+        try (
+        Statement stmnt = connection.createStatement();
+        ResultSet rs = stmnt.executeQuery("SELECT Count(*) as nbReservation, dateDebut, dateFin FROM reservation WHERE dateDebut BETWEEN '"+dateDebut+"' and '"+dateFin+"' OR dateFin BETWEEN '"+dateDebut+"' and '"+dateFin+"'");
+
+        ){
+
+            while (rs.next()) {
+                recette +=  rs.getInt("recette");;
+            }
+
+           
+        }
+        return recette ;
+    }
+    */
     
     public List<Reservation> getReservationList() throws SQLException {
         try (

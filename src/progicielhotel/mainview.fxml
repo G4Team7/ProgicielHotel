@@ -155,7 +155,7 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="219.0" layoutY="522.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="419.0" layoutY="522.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
             <Button layoutX="621.0" layoutY="521.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="180.0" style="-fx-background-color: white;" textOverrun="CLIP" />
-            <Text fill="#bda740" layoutX="621.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="395€" textAlignment="CENTER" wrappingWidth="180.00001089647412">
+            <Text fx:id="textRecette" fill="#bda740" layoutX="621.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="395€" textAlignment="CENTER" wrappingWidth="180.00001089647412">
                <font>
                   <Font size="64.0" />
                </font>
@@ -190,7 +190,7 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <Text fill="#bda740" layoutX="620.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3935€" textAlignment="CENTER" wrappingWidth="180.00001089647412">
+            <Text fx:id="textRecetteMonth" fill="#bda740" layoutX="620.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3935€" textAlignment="CENTER" wrappingWidth="180.00001089647412">
                <font>
                   <Font size="64.0" />
                </font>
