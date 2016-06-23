@@ -19,7 +19,8 @@ public class LoginManager {
    * Will show the main application screen.
    */ 
   public void authenticated(String sessionID) {
-    showMainView(sessionID);
+    //showMainView(sessionID);
+    showDirecteurRestaurant();
   }
 
   /**
@@ -53,6 +54,20 @@ public class LoginManager {
       MainViewController controller = 
         loader.<MainViewController>getController();
       controller.initSessionID(this, sessionID);
+    } catch (IOException ex) {
+      Logger.getLogger(LoginManager.class.getName()).log(Level.SEVERE, null, ex);
+    }
+  }
+  
+  private void showDirecteurRestaurant() {
+    try {
+      FXMLLoader loader = new FXMLLoader(
+        getClass().getResource("DirecteurRestaurant.fxml")
+      );
+      scene.setRoot((Parent) loader.load());
+      DirecteurRestaurantController controller = 
+        loader.<DirecteurRestaurantController>getController();
+      controller.initialize();
     } catch (IOException ex) {
       Logger.getLogger(LoginManager.class.getName()).log(Level.SEVERE, null, ex);
     }
