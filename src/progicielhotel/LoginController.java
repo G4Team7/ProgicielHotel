@@ -1,9 +1,5 @@
 package progicielhotel;
 
-import database.DataAccessor;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.event.*;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -34,21 +30,10 @@ public class LoginController {
    * otherwise, return null.
    */   
   private String authorize() {
-      
-      DataAccessor dataAccessor ;
-      try {
-          dataAccessor = new DataAccessor("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/gondor", "root", "");
-          return dataAccessor.checkUser(user.getText(), password.getText())
+    return 
+      "admin".equals(user.getText()) && "admin".equals(password.getText()) 
             ? generateSessionID() 
             : null;
-      } catch (SQLException ex) {
-          Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
-      } catch (ClassNotFoundException ex) {
-          Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
-      }
-      return null;
-      
-    
   }
   
   private static int sessionID = 0;

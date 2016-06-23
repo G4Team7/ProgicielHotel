@@ -72,10 +72,14 @@
                </font>
             </Button>
             <TextField fx:id="user" alignment="CENTER" layoutX="514.0" layoutY="426.0" prefHeight="55.0" prefWidth="414.0" promptText="Identifiant">
-               
+               <font>
+                  <Font size="24.0" />
+               </font>
             </TextField>
             <TextField fx:id="password" alignment="CENTER" layoutX="514.0" layoutY="505.0" prefHeight="55.0" prefWidth="414.0" promptText="Mot de passe">
-               
+               <font>
+                  <Font size="24.0" />
+               </font>
             </TextField>
          </children>
       </Pane>
