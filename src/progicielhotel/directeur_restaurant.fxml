@@ -88,84 +88,26 @@
       </Pane>
       <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: cccccc;" GridPane.columnIndex="1">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="244.0" layoutX="22.0" layoutY="68.0" stroke="WHITE" strokeType="INSIDE" width="780.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="22.0" layoutY="330.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="219.0" layoutY="331.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="419.0" layoutY="331.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
-            <Button layoutX="621.0" layoutY="330.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="180.0" style="-fx-background-color: white;" textOverrun="CLIP" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="22.0" layoutY="521.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="219.0" layoutY="522.0" stroke="WHITE" strokeType="INSIDE" width="383.0" />
-            <Button layoutX="621.0" layoutY="521.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="180.0" style="-fx-background-color: white;" textOverrun="CLIP" />
             <ImageView fitHeight="49.0" fitWidth="822.0" layoutY="1.0">
                <image>
                   <Image url="@img\restaurant_02.png" />
                </image>
             </ImageView>
-            <Text fill="#bda740" layoutX="419.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="57" textAlignment="CENTER" wrappingWidth="180.0">
-               <font>
-                  <Font size="96.0" />
-               </font>
-            </Text>
-            <Text fill="#0c193a" layoutX="621.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durée moyenne" textAlignment="CENTER" wrappingWidth="180.0">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Text>
-            <Text fill="#0c193a" layoutX="621.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de séjour" textAlignment="CENTER" wrappingWidth="180.0">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Text>
-            <Text fill="#bda740" layoutX="219.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="37" textAlignment="CENTER" wrappingWidth="180.0">
-               <font>
-                  <Font size="96.0" />
-               </font>
-            </Text>
-            <Text fill="#0c193a" layoutX="419.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durée moyenne" textAlignment="CENTER" wrappingWidth="180.0">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="244.0" layoutX="22.0" layoutY="68.0" stroke="WHITE" strokeType="INSIDE" width="780.0" />
+            <LineChart layoutX="22.0" layoutY="117.0" prefHeight="196.0" prefWidth="761.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <Text fill="#0c193a" layoutX="39.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suivi de revenu" wrappingWidth="180.0">
                <font>
                   <Font size="14.0" />
                </font>
             </Text>
-            <Text fill="#0c193a" layoutX="419.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de séjour" textAlignment="CENTER" wrappingWidth="180.0">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Text>
-            <Text fill="#0c193a" layoutX="219.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durée moyenne" textAlignment="CENTER" wrappingWidth="180.0">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Text>
-            <Text fill="#0c193a" layoutX="219.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de séjour" textAlignment="CENTER" wrappingWidth="180.0">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Text>
-            <Text fill="#bda740" layoutX="620.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="77" textAlignment="CENTER" wrappingWidth="180.0">
-               <font>
-                  <Font size="96.0" />
-               </font>
-            </Text>
-            <ImageView fitHeight="124.0" fitWidth="124.0" layoutX="652.0" layoutY="534.0">
-               <image>
-                  <Image url="@img\restaurant_09.png" />
-               </image>
-            </ImageView>
-            <Text fill="#0c193a" layoutX="621.0" layoutY="674.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carte du jour" textAlignment="CENTER" wrappingWidth="180.0">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Text>
-            <Text fill="#0c193a" layoutX="421.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tables  / soir" textAlignment="CENTER" wrappingWidth="180.0">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Text>
-            <Text fill="#0c193a" layoutX="221.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tables / midi" textAlignment="CENTER" wrappingWidth="180.0">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="22.0" layoutY="330.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
             <Text fill="#bda740" layoutX="22.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="395€" textAlignment="CENTER" wrappingWidth="180.0">
                <font>
                   <Font size="64.0" />
@@ -181,6 +123,55 @@
                   <Font size="14.0" />
                </font>
             </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="219.0" layoutY="331.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
+            <Text fill="#bda740" layoutX="219.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="37" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="219.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durée moyenne" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="219.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de séjour" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="419.0" layoutY="331.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
+            <Text fill="#bda740" layoutX="419.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="57" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="419.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durée moyenne" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="419.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de séjour" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="621.0" layoutY="330.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="180.0" style="-fx-background-color: white;" textOverrun="CLIP" />
+            <Text fill="#0c193a" layoutX="621.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durée moyenne" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="621.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de séjour" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bda740" layoutX="620.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="77" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="22.0" layoutY="521.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
             <Text fill="#bda740" layoutX="22.0" layoutY="648.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3495€" textAlignment="CENTER" wrappingWidth="180.0">
                <font>
                   <Font size="64.0" />
@@ -196,17 +187,26 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <LineChart layoutX="22.0" layoutY="117.0" prefHeight="196.0" prefWidth="761.0">
-              <xAxis>
-                <CategoryAxis side="BOTTOM" />
-              </xAxis>
-              <yAxis>
-                <NumberAxis side="LEFT" />
-              </yAxis>
-            </LineChart>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="219.0" layoutY="522.0" stroke="WHITE" strokeType="INSIDE" width="383.0" />
+            <Text fill="#0c193a" layoutX="421.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tables  / soir" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0c193a" layoutX="221.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tables / midi" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
             <ProgressIndicator layoutX="262.0" layoutY="566.0" prefHeight="112.0" prefWidth="118.0" progress="0.51" />
             <ProgressIndicator layoutX="460.0" layoutY="566.0" prefHeight="112.0" prefWidth="118.0" progress="0.25" />
-            <Text fill="#0c193a" layoutX="39.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suivi de revenu" wrappingWidth="180.0">
+            <Button layoutX="621.0" layoutY="521.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="180.0" style="-fx-background-color: white;" textOverrun="CLIP" />
+            <ImageView fitHeight="124.0" fitWidth="124.0" layoutX="652.0" layoutY="534.0">
+               <image>
+                  <Image url="@img\restaurant_09.png" />
+               </image>
+            </ImageView>
+            <Text fill="#0c193a" layoutX="621.0" layoutY="674.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carte du jour" textAlignment="CENTER" wrappingWidth="180.0">
                <font>
                   <Font size="14.0" />
                </font>
