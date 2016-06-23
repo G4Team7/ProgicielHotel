@@ -7,6 +7,7 @@ package database;
 
 import Client.Client;
 import Reservation.Reservation;
+import Reservation.ReservationRestaurant;
 import java.sql.Connection ;
 import java.sql.Date;
 import java.sql.DriverManager ;
@@ -23,6 +24,7 @@ import java.util.ArrayList ;
  */
 public class DataAccessor {
     private Connection connection ;
+
 
     public DataAccessor(String driverClassName, String dbURL, String user, String password) throws SQLException, ClassNotFoundException {
         Class.forName(driverClassName);
@@ -75,6 +77,29 @@ public class DataAccessor {
         } 
     }
     
+    public int getReservationRestaurant() throws SQLException {
+        try {
+            Statement stmnt = connection.createStatement();
+            ResultSet rs = stmnt.executeQuery("SELECT COUNT(res.id), SUM(tarif) "
+                                        + "FROM reservation r inner join chambre c on r.id_chambre = c.id inner join reservation_restaurant res on res.id = r.id_reservation_restaurant "
+                                        + "WHERE dateReservation = CURRENT_DATE()"); 
+            
+            
+            List<ReservationRestaurant> reservationRestaurant = new ArrayList<>();
+            while (rs.next()) {
+               int reservation = intParseint(rs);
+               return reservation;
+            }
+            
+        }
+        catch (SQLException e) {
+        System.out.println("Connection Failed! Check output console");
+        e.printStackTrace();
+        }
+
+        return 0;
+    }
+    
     public List<Client> getClientList() throws SQLException {
         try (
             Statement stmnt = connection.createStatement();
@@ -90,5 +115,9 @@ public class DataAccessor {
             }
             return clientList ;
         } 
+    }
+
+    private int intParseint(ResultSet rs) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
