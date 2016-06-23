@@ -15,9 +15,9 @@ import java.sql.SQLException;
  */
 public class DBConnection {  
    private static Connection conn;  
-   private static String url = "jdbc:mysql://localhost/gondor";  
-   private static String user = "root";//Username of database  
-   private static String pass = "";//Password of database 
+   private static String url = "jdbc:mysql://149.202.48.248/gondor";  
+   private static String user = "Webmaster";//Username of database  
+   private static String pass = "lerechad";//Password of database 
    
    public static Connection connect() throws SQLException{  
      try{  

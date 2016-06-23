@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ProgressIndicator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -24,9 +28,14 @@
    <children>
       <Pane prefHeight="768.0" prefWidth="161.0" style="-fx-background-color: #091d4a;">
          <children>
+            <Rectangle fill="#06225b" height="46.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="202.0" />
             <ImageView fitHeight="49.0" fitWidth="204.0" layoutX="1.0" layoutY="1.0">
                <image>
-                  <Image url="@Projet%20Hotel/decoupe/decoupe%201.png" />
+<<<<<<< HEAD
+                  <Image url="@../progicielhotel/img/decoupe%201.png" />
+=======
+                  <Image url="@img\decoupe_1.png" />
+>>>>>>> master
                </image>
             </ImageView>
             <ChoiceBox layoutY="100.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="202.0" style="-fx-background-color: #06225b;">
@@ -69,7 +78,6 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <Rectangle fill="#06225b" height="46.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="202.0" />
             <Text fill="WHITE" layoutX="30.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
                <font>
                   <Font size="14.0" />
@@ -77,42 +85,62 @@
             </Text>
             <ImageView fitHeight="27.0" fitWidth="18.0" layoutX="9.0" layoutY="55.0">
                <image>
-                  <Image url="@Projet%20Hotel/decoupe/dashboard_generale_03.png" />
+<<<<<<< HEAD
+                  <Image url="@../progicielhotel/img/dashboard_generale_03.png" />
+=======
+                  <Image url="@img\dashboard_generale_03.png" />
+>>>>>>> master
                </image>
             </ImageView>
             <ImageView fitHeight="27.0" fitWidth="18.0" layoutX="9.0" layoutY="102.0">
                <image>
-                  <Image url="@Projet%20Hotel/decoupe/dashboard_generale_06.png" />
+<<<<<<< HEAD
+                  <Image url="@../progicielhotel/img/dashboard_generale_06.png" />
+=======
+                  <Image url="@img\dashboard_generale_06.png" />
+>>>>>>> master
                </image>
             </ImageView>
             <ImageView fitHeight="27.0" fitWidth="18.0" layoutX="9.0" layoutY="147.0">
                <image>
-                  <Image url="@Projet%20Hotel/decoupe/dashboard_generale_08.png" />
+<<<<<<< HEAD
+                  <Image url="@../progicielhotel/img/dashboard_generale_08.png" />
+=======
+                  <Image url="@img\dashboard_generale_08.png" />
+>>>>>>> master
                </image>
             </ImageView>
             <ImageView fitHeight="27.0" fitWidth="18.0" layoutX="9.0" layoutY="187.0">
                <image>
-                  <Image url="@Projet%20Hotel/decoupe/dashboard_generale_10.png" />
+<<<<<<< HEAD
+                  <Image url="@../progicielhotel/img/dashboard_generale_10.png" />
+=======
+                  <Image url="@img\dashboard_generale_10.png" />
+>>>>>>> master
                </image>
             </ImageView>
             <ImageView fitHeight="27.0" fitWidth="18.0" layoutX="9.0" layoutY="233.0">
                <image>
-                  <Image url="@Projet%20Hotel/decoupe/dashboard_generale_03.png" />
+<<<<<<< HEAD
+                  <Image url="@../progicielhotel/img/dashboard_generale_03.png" />
+=======
+                  <Image url="@img\dashboard_generale_03.png" />
+>>>>>>> master
                </image>
             </ImageView>
          </children>
       </Pane>
       <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: cccccc;" GridPane.columnIndex="1">
          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="621.0" layoutY="331.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
+            <Button layoutX="22.0" layoutY="522.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="180.0" style="-fx-background-color: white;" textFill="WHITE" />
+            <Button layoutX="219.0" layoutY="522.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="180.0" style="-fx-background-color: white;" textFill="WHITE" />
+            <Button layoutX="419.0" layoutY="522.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="180.0" style="-fx-background-color: white;" textFill="WHITE" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="244.0" layoutX="22.0" layoutY="68.0" stroke="WHITE" strokeType="INSIDE" width="577.0" />
             <Button layoutX="621.0" layoutY="68.0" mnemonicParsing="false" prefHeight="244.0" prefWidth="180.0" style="-fx-background-color: white;" textOverrun="CLIP" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="22.0" layoutY="330.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="219.0" layoutY="331.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="419.0" layoutY="331.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
-            <Button layoutX="621.0" layoutY="330.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="180.0" style="-fx-background-color: white;" textOverrun="CLIP" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="22.0" layoutY="521.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="219.0" layoutY="522.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="419.0" layoutY="522.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
             <Button layoutX="621.0" layoutY="521.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="180.0" style="-fx-background-color: white;" textOverrun="CLIP" />
             <Text fill="#bda740" layoutX="621.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="395€" textAlignment="CENTER" wrappingWidth="180.00001089647412">
                <font>
@@ -126,7 +154,11 @@
             </Text>
             <ImageView fitHeight="49.0" fitWidth="822.0" layoutY="1.0">
                <image>
-                  <Image url="@Projet%20Hotel/decoupe/dashboard_generale.png" />
+<<<<<<< HEAD
+                  <Image url="@../progicielhotel/img/dashboard_generale.png" />
+=======
+                  <Image url="@img\dashboard_generale.png" />
+>>>>>>> master
                </image>
             </ImageView>
             <Text fill="#0c193a" layoutX="661.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chiffre d'affaires">
@@ -211,22 +243,38 @@
             </Text>
             <ImageView fitHeight="124.0" fitWidth="124.0" layoutX="247.0" layoutY="532.0">
                <image>
-                  <Image url="@Projet%20Hotel/decoupe/dashboard_generale_17.png" />
+<<<<<<< HEAD
+                  <Image url="@../progicielhotel/img/dashboard_generale_17.png" />
+=======
+                  <Image url="@img\dashboard_generale_17.png" />
+>>>>>>> master
                </image>
             </ImageView>
             <ImageView fitHeight="124.0" fitWidth="124.0" layoutX="50.0" layoutY="534.0">
                <image>
-                  <Image url="@Projet%20Hotel/decoupe/dashboard_generale_15.png" />
+<<<<<<< HEAD
+                  <Image url="@../progicielhotel/img/dashboard_generale_15.png" />
+=======
+                  <Image url="@img\dashboard_generale_15.png" />
+>>>>>>> master
                </image>
             </ImageView>
             <ImageView fitHeight="124.0" fitWidth="124.0" layoutX="447.0" layoutY="534.0">
                <image>
-                  <Image url="@Projet%20Hotel/decoupe/dashboard_generale_19.png" />
+<<<<<<< HEAD
+                  <Image url="@../progicielhotel/img/dashboard_generale_19.png" />
+=======
+                  <Image url="@img\dashboard_generale_19.png" />
+>>>>>>> master
                </image>
             </ImageView>
             <ImageView fitHeight="124.0" fitWidth="124.0" layoutX="652.0" layoutY="534.0">
                <image>
-                  <Image url="@Projet%20Hotel/decoupe/dashboard_generale_21.png" />
+<<<<<<< HEAD
+                  <Image url="@../progicielhotel/img/dashboard_generale_21.png" />
+=======
+                  <Image url="@img\dashboard_generale_21.png" />
+>>>>>>> master
                </image>
             </ImageView>
             <Text fill="#0c193a" layoutX="621.0" layoutY="674.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager du SPA" textAlignment="CENTER" wrappingWidth="180.0">
@@ -245,6 +293,20 @@
                </font>
             </Text>
             <Text fill="#0c193a" layoutX="22.0" layoutY="674.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gouvernante" textAlignment="CENTER" wrappingWidth="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ProgressIndicator layoutX="55.0" layoutY="364.0" prefHeight="96.0" prefWidth="114.0" progress="0.44" />
+            <LineChart layoutX="22.0" layoutY="110.0" prefHeight="202.0" prefWidth="577.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <Text fill="#0c193a" layoutX="50.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suivi de revenu" wrappingWidth="180.0">
                <font>
                   <Font size="14.0" />
                </font>
