@@ -43,8 +43,8 @@ public class Client {
     public final String getAdresse() {
         return adresseProperty().get();
     }
-    public final void setAdresse(String addresse) {
-        adresseProperty().set(addresse);
+    public final void setAdresse(String adresse) {
+        adresseProperty().set(adresse);
     }
     
     
@@ -58,7 +58,7 @@ public class Client {
     }
 
     
-    public void deleteUser(){
+    public void deleteClient(){
           
     }
 }
