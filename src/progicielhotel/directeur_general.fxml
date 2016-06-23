@@ -4,11 +4,14 @@
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.LineChart?>
 <?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
@@ -28,52 +31,12 @@
    <children>
       <Pane prefHeight="768.0" prefWidth="161.0" style="-fx-background-color: #091d4a;">
          <children>
-            <Rectangle fill="#06225b" height="46.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="202.0" />
             <ImageView fitHeight="49.0" fitWidth="204.0" layoutX="1.0" layoutY="1.0">
                <image>
-                  <Image url="@img\decoupe_1.png" />
+                  <Image url="@img/decoupe_1.png" />
                </image>
             </ImageView>
-            <ChoiceBox layoutY="100.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="202.0" style="-fx-background-color: #06225b;">
-               <opaqueInsets>
-                  <Insets left="1.0" />
-               </opaqueInsets>
-            </ChoiceBox>
-            <ChoiceBox layoutY="145.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0" prefWidth="202.0" style="-fx-background-color: #06225b;">
-               <opaqueInsets>
-                  <Insets left="1.0" />
-               </opaqueInsets>
-            </ChoiceBox>
-            <ChoiceBox layoutY="187.0" prefHeight="37.0" prefWidth="202.0" style="-fx-background-color: #06225b;">
-               <opaqueInsets>
-                  <Insets left="1.0" />
-               </opaqueInsets>
-            </ChoiceBox>
-            <ChoiceBox layoutY="230.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0" prefWidth="202.0" style="-fx-background-color: #06225b;">
-               <opaqueInsets>
-                  <Insets left="1.0" />
-               </opaqueInsets>
-            </ChoiceBox>
-            <Text fill="WHITE" layoutX="31.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gérer les réservations">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="31.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gérer les services">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="30.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gérer les tarifs">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="31.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gérer les profils">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Text>
+            <Rectangle fill="#06225b" height="46.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="202.0" />
             <Text fill="WHITE" layoutX="30.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
                <font>
                   <Font size="14.0" />
@@ -84,26 +47,100 @@
                   <Image url="@img\dashboard_generale_03.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="27.0" fitWidth="18.0" layoutX="9.0" layoutY="102.0">
-               <image>
-                  <Image url="@img\dashboard_generale_06.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="27.0" fitWidth="18.0" layoutX="9.0" layoutY="147.0">
-               <image>
-                  <Image url="@img\dashboard_generale_08.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="27.0" fitWidth="18.0" layoutX="9.0" layoutY="187.0">
-               <image>
-                  <Image url="@img\dashboard_generale_10.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="27.0" fitWidth="18.0" layoutX="9.0" layoutY="233.0">
-               <image>
-                  <Image url="@img\dashboard_generale_03.png" />
-               </image>
-            </ImageView>
+            <Accordion layoutX="-3.0" layoutY="96.0">
+               <panes>
+                  <TitledPane animated="false" depthTest="DISABLE" prefHeight="0.0" prefWidth="212.0" style="-fx-background-color: #0c193a;" text="Gérer les réservations">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #0c193a;">
+                           <children>
+                              <Hyperlink layoutX="33.0" layoutY="10.0" text="Réserver une chambre" textFill="WHITE" />
+                              <Hyperlink layoutX="32.0" layoutY="43.0" text="Modifier une réservation" textFill="WHITE" />
+                              <Hyperlink layoutX="33.0" layoutY="79.0" text="Consulter les réservations" textFill="WHITE" />
+                              <Hyperlink layoutX="33.0" layoutY="115.0" text="Supprimer une réservation" textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TitledPane>
+                  <TitledPane animated="false" text="Gérer les services" textOverrun="CLIP">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #0c193a;">
+                           <children>
+                              <Hyperlink layoutX="30.0" layoutY="19.0" text="Consulter services" textFill="WHITE">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Hyperlink>
+                              <Hyperlink layoutX="29.0" layoutY="59.0" text="Ajouter une réservation" textFill="WHITE">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Hyperlink>
+                              <Hyperlink layoutX="30.0" layoutY="103.0" text="Supprimer une réservation" textFill="WHITE">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Hyperlink>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane animated="false" text="Facturer">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #0c193a;">
+                           <children>
+                              <Hyperlink layoutX="33.0" layoutY="20.0" text="Consulter une facture" textFill="WHITE" />
+                              <Hyperlink layoutX="33.0" layoutY="54.0" text="Ajouter une facture" textFill="WHITE" />
+                              <Hyperlink layoutX="32.0" layoutY="90.0" text="Modifier une facture" textFill="WHITE" />
+                              <Hyperlink layoutX="33.0" layoutY="124.0" text="Supprimer une facture" textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane animated="false" text="Gérer les tarifs">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #0c193a;">
+                           <children>
+                              <Hyperlink layoutX="34.0" layoutY="14.0" text="Consulter les tarifs" textFill="WHITE" />
+                              <Hyperlink layoutX="34.0" layoutY="49.0" text="Ajouter les tarifs" textFill="WHITE" />
+                              <Hyperlink layoutX="33.0" layoutY="87.0" text="Modifier les tarifs" textFill="WHITE" />
+                              <Hyperlink layoutX="34.0" layoutY="123.0" text="Supprimer les tarifs" textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane animated="false" text="Gérer les profils">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #0c193a;">
+                           <children>
+                              <Accordion layoutX="-1.0" />
+                              <Hyperlink layoutX="37.0" layoutY="13.0" text="Consulter les profils" textFill="WHITE" />
+                              <Hyperlink layoutX="37.0" layoutY="47.0" text="Ajouter les profils" textFill="WHITE" />
+                              <Hyperlink layoutX="37.0" layoutY="83.0" text="Modifier les profils" textFill="WHITE" />
+                              <Hyperlink layoutX="37.0" layoutY="120.0" text="Supprimer les profils" textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TitledPane>
+               </panes>
+            </Accordion>
          </children>
       </Pane>
       <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: cccccc;" GridPane.columnIndex="1">
