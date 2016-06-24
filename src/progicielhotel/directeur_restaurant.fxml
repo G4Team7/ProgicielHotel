@@ -114,7 +114,11 @@
                </font>
             </Text>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="168.0" layoutX="22.0" layoutY="330.0" stroke="WHITE" strokeType="INSIDE" width="180.0" />
+<<<<<<< HEAD
             <Text fx:id="recetteRestauJour" fill="#bda740" layoutX="22.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="395€" textAlignment="CENTER" wrappingWidth="180.0">
+=======
+            <Text fill="#bda740" layoutX="22.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="395€" textAlignment="CENTER" wrappingWidth="180.0">
+>>>>>>> master
                <font>
                   <Font size="64.0" />
                </font>
