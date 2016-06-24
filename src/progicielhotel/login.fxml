@@ -71,12 +71,20 @@
                   <Font size="18.0" />
                </font>
             </Button>
+<<<<<<< HEAD
             <TextField fx:id="user" alignment="CENTER" layoutX="325.0" layoutY="421.0" prefHeight="55.0" prefWidth="400.0" promptText="Identifiant">
+=======
+            <TextField fx:id="user" alignment="CENTER" layoutX="305.0" layoutY="421.0" prefHeight="55.0" prefWidth="414.0" promptText="Identifiant">
+>>>>>>> 1ca23002083b37d5200a716348e225f8c0b73b9a
                <font>
                   <Font size="24.0" />
                </font>
             </TextField>
+<<<<<<< HEAD
             <TextField fx:id="password" alignment="CENTER" layoutX="325.0" layoutY="500.0" prefHeight="55.0" prefWidth="400.0" promptText="Mot de passe">
+=======
+            <TextField fx:id="password" alignment="CENTER" layoutX="305.0" layoutY="500.0" prefHeight="55.0" prefWidth="414.0" promptText="Mot de passe">
+>>>>>>> 1ca23002083b37d5200a716348e225f8c0b73b9a
                <font>
                   <Font size="24.0" />
                </font>
