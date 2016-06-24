@@ -57,4 +57,18 @@ public class LoginManager {
       Logger.getLogger(LoginManager.class.getName()).log(Level.SEVERE, null, ex);
     }
   }
+  
+  public void showDirecteurRestau() {
+    try {
+      FXMLLoader loader = new FXMLLoader(
+        getClass().getResource("directeur_restaurant.fxml")
+      );
+      scene.setRoot((Parent) loader.load());
+      DirecteurRestaurantController controller = 
+        loader.<DirecteurRestaurantController>getController();
+      controller.initialize();
+    } catch (IOException ex) {
+      Logger.getLogger(LoginManager.class.getName()).log(Level.SEVERE, null, ex);
+    }
+  }
 }
